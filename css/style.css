@@ -88,20 +88,65 @@ header p {
   background-color: white;
 }
 
-.service-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 20px;
-  margin-top: 20px;
+/* .service-scroll-vertical {
+  height: 100px; 
+  overflow-y: auto;
+  scroll-snap-type: y mandatory;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0;
+  padding: 0;
+} */
+
+/* .service-item {
+  scroll-snap-align: center;
+  font-size: 1.5rem;
+  padding: 40px 20px;
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  background-color: #fff;
+  transition: background 0.3s;
 }
 
-.card {
-  background-color: #e5e7eb;
-  padding: 20px;
-  border-radius: 10px;
-  font-size: 1.1rem;
+.service-item:hover {
+  background-color: #f3f4f6;
 }
 
+.service-scroll-wrapper {
+  height: 300px; 
+  overflow: hidden;
+  position: relative;
+}
+
+.service-scroll-vertical {
+  display: flex;
+  flex-direction: column;
+  animation: scroll-vertical 12s linear infinite;
+}
+
+.service-item {
+  font-size: 1.5rem;
+  padding: 15px 20px;
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+  background-color: white;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+
+@keyframes scroll-vertical {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-50%);
+  }
+} */
 /* Reviews Section */
 .reviews {
   padding: 40px 20px;
@@ -278,6 +323,45 @@ h6 {
     opacity: 1;
   }
 }
+
+.service-scroll-wrapper {
+  height: 60px; /* height of one item */
+  overflow: hidden;
+  position: relative;
+}
+
+.service-scroll-inner {
+  display: flex;
+  flex-direction: column;
+  animation: scroll-loop 8s linear infinite;
+}
+
+.service-item {
+  font-size: 1.4rem;
+  text-align: center;
+  padding: 15px 20px;
+  width: 100%;
+  font-weight: bold;
+  background-color: #fff;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+/* Animation to scroll the list up over time */
+@keyframes scroll-loop {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-400px); /* 6 items * 60px */
+  }
+}
+
 
 /* Responsive adjustment */
 @media (max-width: 991px) {
