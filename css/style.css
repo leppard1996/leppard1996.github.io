@@ -257,6 +257,10 @@ h6 {
   /* Starts after van stops */
 }
 
+.active{
+  color:#373737!important;
+}
+
 /* Animate the van driving in */
 @keyframes driveIn {
   0% {
