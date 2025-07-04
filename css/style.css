@@ -179,12 +179,6 @@ h1, h2, h3, h4, h5, h6 {
   transform: scale(1.1);
 }
 
-@media (min-width: 768px) {
-    header{
-        background-position-y: -90px;
-    }
-}
-
 /* Van Animation */
 .van-animation {
   position: absolute;
@@ -232,7 +226,7 @@ h1, h2, h3, h4, h5, h6 {
     transform: translateX(100vw);
   }
   100% {
-    transform: translateX(15vw);
+    transform: translateX(20vw);
   }
 }
 
@@ -248,4 +242,18 @@ h1, h2, h3, h4, h5, h6 {
   .logo-container {
     top: 12px;
   }
+}
+
+@media (min-width: 768px) {
+    header{
+        background-position-y: -90px;
+    }
+    @keyframes driveIn {
+  0% {
+    transform: translateX(100vw);
+  }
+  100% {
+    transform: translateX(10vw);
+  }
+}
 }
