@@ -352,6 +352,10 @@ h6 {
   text-decoration: underline;
 }
 
+.text-capitalize {
+  text-transform: capitalize;
+}
+
 form label {
   font-weight: bold;
 }
