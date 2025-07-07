@@ -12,43 +12,52 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <!-- Brand -->
-        <a class="navbar-brand" href="../index.html"><img src="../images/logo.png" alt="Pro-Tech Auto Repair"></a>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark position-relative overflow-hidden">
+        <!-- Animated Van acting as navbar-brand -->
+        <a href="../index.html" class="van-link">
+            <img src="../images/van-only.png" alt="Van" class="van-animation" id="van">
+        </a>
 
-        <!-- Hamburger Button -->
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        <!-- Centered Logo -->
+        <div class="logo-container mx-auto">
+            <img src="../images/logo.png" alt="Pro-Tech Auto Repair" class="logo-img fade-in-delayed">
+        </div>
+
+        <!-- Hamburger Button on Right -->
+        <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
 
-        <!-- Collapsible Nav Items -->
+        <!-- Nav Links -->
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto text-right">
-                <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
-                <li class="nav-item"><a class="nav-link active" href="reviews.html">Reviews</a></li>
-                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                <li class="nav-item"><a class="nav-link active" href="../index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="./services.html">Services</a></li>
+                <li class="nav-item"><a class="nav-link" href="./reviews.html">Reviews</a></li>
+                <li class="nav-item"><a class="nav-link" href="./contact.html">Contact</a></li>
             </ul>
         </div>
     </nav>
     <div class="container d-flex flex-column min-vh-100">
         <h1 class="my-4 text-center">Reviews</h1>
-    <!-- Elfsight All-in-One Reviews | Untitled All-in-One Reviews -->
-<script src="https://static.elfsight.com/platform/platform.js" async></script>
-<div class="elfsight-app-f3a8c6d1-4263-40fb-a28e-8f0682674b25" data-elfsight-app-lazy></div>
+        <!-- Elfsight All-in-One Reviews | Untitled All-in-One Reviews -->
+        <script src="https://static.elfsight.com/platform/platform.js" async></script>
+        <div class="elfsight-app-f3a8c6d1-4263-40fb-a28e-8f0682674b25" data-elfsight-app-lazy></div>
     </div>
 
-        <footer class="text-center mt-5 p-3 bg-dark text-white">
+    <footer class="text-center mt-5 p-3 bg-dark text-white">
         &copy;Pro-Tech Auto Repair
-          <div class="footer-socials">
-    <a href="https://www.facebook.com/ProTechMobileAutoRepair" target="_blank" aria-label="Facebook">
-      <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/facebook.svg" alt="Facebook logo" class="social-icon">
-    </a>
-    <a href="https://maps.app.goo.gl/eoE7hGoghmgCAymt9" target="_blank" aria-label="Google">
-      <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/google.svg" alt="Google logo" class="social-icon">
-    </a>
-  </div>
+        <div class="footer-socials">
+            <a href="https://www.facebook.com/ProTechMobileAutoRepair" target="_blank" aria-label="Facebook">
+                <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/facebook.svg" alt="Facebook logo"
+                    class="social-icon">
+            </a>
+            <a href="https://maps.app.goo.gl/eoE7hGoghmgCAymt9" target="_blank" aria-label="Google">
+                <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/google.svg" alt="Google logo"
+                    class="social-icon">
+            </a>
+        </div>
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.7.0.slim.min.js"></script>

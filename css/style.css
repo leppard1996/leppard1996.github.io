@@ -358,7 +358,7 @@ h6 {
     transform: translateY(0);
   }
   100% {
-    transform: translateY(-400px); /* 6 items * 60px */
+    transform: translateY(-387px); /* 6 items * 60px */
   }
 }
 

@@ -10,26 +10,33 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <!-- Brand -->
-        <a class="navbar-brand" href="../index.html"><img src="../images/logo.png" alt="Pro-Tech Auto Repair"></a>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark position-relative overflow-hidden">
+    <!-- Animated Van acting as navbar-brand -->
+    <a href="../index.html" class="van-link">
+        <img src="../images/van-only.png" alt="Van" class="van-animation" id="van">
+    </a>
 
-        <!-- Hamburger Button -->
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+    <!-- Centered Logo -->
+    <div class="logo-container mx-auto">
+        <img src="../images/logo.png" alt="Pro-Tech Auto Repair" class="logo-img fade-in-delayed">
+    </div>
 
-        <!-- Collapsible Nav Items -->
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ml-auto text-right">
-                  <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
-                <li class="nav-item"><a class="nav-link active" href="services.html">Services</a></li>
-                <li class="nav-item"><a class="nav-link" href="reviews.html">Reviews</a></li>
-                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
+    <!-- Hamburger Button on Right -->
+    <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Nav Links -->
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto text-right">
+          <li class="nav-item"><a class="nav-link active" href="../index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="./services.html">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="./reviews.html">Reviews</a></li>
+          <li class="nav-item"><a class="nav-link" href="./contact.html">Contact</a></li>
+        </ul>
+    </div>
+</nav>
     <div class="container min-vh-100">
             <header class="jumbotron text-center" id="services-header">
             <div class="overlay">
