@@ -399,6 +399,14 @@ form label {
 
 
 /* Responsive adjustment */
+@media (min-width: 500px) {
+  iframe {
+    width: 475px;
+    height: 375px;
+  }
+
+} 
+
 @media (max-width: 991px) {
   .logo-container {
     top: 12px;
