@@ -41,9 +41,27 @@
     </nav>
     <div class="container d-flex flex-column min-vh-100">
         <h1 class="my-4 text-center">Reviews</h1>
-        <!-- Elfsight All-in-One Reviews | Untitled All-in-One Reviews -->
-        <script src="https://static.elfsight.com/platform/platform.js" async></script>
-        <div class="elfsight-app-f3a8c6d1-4263-40fb-a28e-8f0682674b25" data-elfsight-app-lazy></div>
+        <div id="reviews-section" style="min-height: 200px; position: relative;">
+            <!-- Gear Loader -->
+            <div id="loader-container">
+                <svg id="gear-spinner" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+                    <g fill="#555">
+                        <path
+                            d="M87.4 54.5c.1-.8.1-1.5.1-2.3s0-1.5-.1-2.3l8.5-6.6c.8-.6 1-1.7.5-2.6l-8-13.8c-.5-.9-1.6-1.3-2.6-1l-10 4c-1.4-1.1-2.8-2.1-4.3-2.9l-1.5-10.6c-.1-1-1-1.8-2-1.8H49.1c-1 0-1.9.8-2 1.8l-1.5 10.6c-1.5.8-3 1.8-4.3 2.9l-10-4c-1-.4-2.1 0-2.6 1l-8 13.8c-.5.9-.3 2 .5 2.6l8.5 6.6c-.1.8-.1 1.5-.1 2.3s0 1.5.1 2.3l-8.5 6.6c-.8.6-1 1.7-.5 2.6l8 13.8c.5.9 1.6 1.3 2.6 1l10-4c1.4 1.1 2.8 2.1 4.3 2.9l1.5 10.6c.1 1 1 1.8 2 1.8h15.8c1 0 1.9-.8 2-1.8l1.5-10.6c1.5-.8 3-1.8 4.3-2.9l10 4c1 .4 2.1 0 2.6-1l8-13.8c.5-.9.3-2-.5-2.6l-8.5-6.6zM50 62c-6.6 0-12-5.4-12-12s5.4-12 12-12 12 5.4 12 12-5.4 12-12 12z" />
+                    </g>
+                </svg>
+            </div>
+
+
+            <!-- Your widget container -->
+            <div id="reviews-widget" style="display: none;">
+                <!-- Widget code here -->
+                
+                <!-- Elfsight All-in-One Reviews | Untitled All-in-One Reviews -->
+                <script src="https://static.elfsight.com/platform/platform.js" async></script>
+                <div class="elfsight-app-f3a8c6d1-4263-40fb-a28e-8f0682674b25" data-elfsight-app-lazy></div>
+            </div>
+        </div>
     </div>
 
     <footer class="text-center mt-5 p-3 bg-dark text-white">
@@ -62,6 +80,16 @@
 
     <script src="https://code.jquery.com/jquery-3.7.0.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  window.addEventListener('load', function () {
+    setTimeout(function () {
+      document.getElementById('loader-container').style.display = 'none';
+      document.getElementById('reviews-widget').style.display = 'block';
+    }, 1000); // Replace with real logic if needed
+  });
+</script>
+
+
 </body>
 
 </html>
