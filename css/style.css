@@ -379,6 +379,8 @@ form label {
   animation: spin-gear 1s linear infinite;
 }
 
+
+
 @keyframes spin-gear {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
@@ -406,6 +408,10 @@ form label {
 @media (min-width: 768px) {
   header {
     background-position-y: -90px;
+  }
+  iframe {
+    width: 600px;
+    height: 450px;
   }
 
   .van-animation {
