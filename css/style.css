@@ -34,7 +34,8 @@ header {
 }
 
 #home-header {
-  background-image: url('../images/banner.jpg');
+  background-image: url('../images/home.jpg');
+  background-position: center;
 }
 
 #services-header {
@@ -360,6 +361,10 @@ form label {
   font-weight: bold;
 }
 
+ul.row li{
+  margin-top: 10px;
+}
+
 #reviews-section {
   position: relative;
   min-height: 200px; /* Adjust based on widget height */
@@ -404,7 +409,6 @@ form label {
     width: 475px;
     height: 375px;
   }
-
 } 
 
 @media (max-width: 991px) {
