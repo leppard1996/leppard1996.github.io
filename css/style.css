@@ -223,9 +223,15 @@ header p {
 
 footer {
   position: sticky;
+  display: flex;
+  justify-content: space-around;
   bottom: 0;
   width: 100%;
   z-index: 1000;
+}
+a:hover {
+  text-decoration: underline;
+  color:white
 }
 
 h1,
@@ -244,6 +250,7 @@ h6 {
 
 
 .footer-socials {
+  padding-left: 5px;
   display: flex;
   gap: 15px;
   justify-content: center;
@@ -405,7 +412,7 @@ ul.row li{
 
 
 /* Responsive adjustment */
-@media (min-width: 500px) {
+@media (min-width: 550px) {
   iframe {
     width: 475px;
     height: 375px;
