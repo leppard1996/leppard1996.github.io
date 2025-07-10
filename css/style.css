@@ -342,7 +342,7 @@ h6 {
 .service-scroll-inner {
   display: flex;
   flex-direction: column;
-  animation: scroll-loop 8s linear infinite;
+  animation: scroll-loop 10s linear infinite;
 }
 
 .service-item {
@@ -406,7 +406,7 @@ ul.row li{
     transform: translateY(0);
   }
   100% {
-    transform: translateY(-387px); /* 6 items * 60px */
+    transform: translateY(-405px); /* 6 items * 60px */
   }
 }
 
